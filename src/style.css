@@ -32,8 +32,8 @@ header {
   margin-bottom: 0%;
 }
 
-nav {
-  margin-top: 0%;
+.filter-bar {
+  margin: 2%;
   padding: 2%;
   width: inherit;
   height: 8vh;
@@ -41,8 +41,8 @@ nav {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  background-color: black;
-  color: whitesmoke;
+  background-color: whitesmoke;
+  color: #0e0e0e;
   font-size: 1rem;
   gap: 2%;
 }
