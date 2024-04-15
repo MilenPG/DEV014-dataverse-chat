@@ -1,8 +1,10 @@
 import { computeStats, filterData, sortData } from "./lib/dataFunctions.js";
 import { renderItems } from "./views/renderCards.js";
 import data from "./data/dataset.js";
+import { filterBar } from "./components/filterBar.js";
 
 const searchRoot = document.querySelector("#root");
+searchRoot.innerHTML = filterBar();
 searchRoot.appendChild(renderItems(data));
 
 const selectfilterOcupation = document.querySelector("#filter-ocupation");

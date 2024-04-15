@@ -32,8 +32,8 @@ header {
   margin-bottom: 0%;
 }
 
-nav {
-  margin-top: 0%;
+.filter-bar {
+  margin-top: 2%;
   padding: 2%;
   width: inherit;
   height: 8vh;
@@ -41,15 +41,15 @@ nav {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  background-color: black;
-  color: whitesmoke;
+  background-color: none;
+  color: #0e0e0e;
   font-size: 1rem;
-  gap: 2%;
+  gap: 1%;
 }
 
-label {
+/* label {
   display: none;
-}
+} */
 
 select,
 button {
@@ -58,14 +58,14 @@ button {
   padding: 0.5%;
   font-family: inherit;
   font-size: inherit;
-  background-color: black;
-  color: whitesmoke;
+  background-color: whitesmoke;
+  color: #0e0e0e;
 }
 
 button {
   height: 2.5em;
-  background-color: #ffffffe0;
-  color: #0e0e0e;
+  background-color: #0e0e0e;
+  color: #ffffffe0;
   font-weight: bold;
   padding: 0.2em;
   border-radius: 15px;
@@ -90,7 +90,7 @@ button {
 }
 
 ul {
-  margin: 3%;
+  margin: 2%;
   gap: 5%;
   padding: 2%;
   display: flex;
@@ -278,7 +278,7 @@ footer {
     text-align: center;
     margin: 2%;
   }
-  nav {
+  .filter-bar {
     height: fit-content;
     display: flex;
     flex-direction: column;
