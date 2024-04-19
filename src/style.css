@@ -17,7 +17,7 @@ body {
 }
 
 header {
-  width: 100vw;
+  width: 100%; /* cambio de vw a % */
   display: flex;
   flex-direction: column;
   background-image: url("https://is1-ssl.mzstatic.com/image/thumb/Bn-3VF2OtmhcC8KC93J9lg/1200x675mf.jpg");
@@ -32,6 +32,8 @@ header {
   margin-bottom: 0%;
 }
 
+
+
 nav {
   padding: 2%;
   width: inherit;
@@ -44,6 +46,33 @@ nav {
   color: whitesmoke;
   font-size: 1rem;
   gap: 1%;
+}
+
+.black-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 14vh;
+}
+
+.black-header-img {
+  width: 380px;
+  height: 100px;
+  object-fit: contain;
+  overflow-clip-margin: border-box;
+  overflow: hidden;
+}
+
+.a-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2%;
+}
+
+.api-a {
+  width: 100px;
 }
 
 .g-chat-button {
@@ -297,6 +326,18 @@ footer {
     margin: 2%;
   }
 
+  .g-chat-button {
+    height: fit-content;
+  }
+
+  .black-header-img {
+    width: 250px;
+  }
+
+  .header-img {
+    display: none;
+  }
+
   nav {
     justify-content: flex-end;
 
@@ -314,6 +355,11 @@ footer {
     width: 100%;
     overflow: hidden;
   }
+
+.button-img {
+  width: auto;
+}
+
   dl {
     background-color: #6255afc9;
     border-radius: 90px;

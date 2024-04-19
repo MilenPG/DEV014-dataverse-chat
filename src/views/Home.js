@@ -2,15 +2,21 @@
 Esta función debe devolver un elemento DOM para que pueda ser utilizado por el enrutador.*/
 
 import { cards } from "../components/Cards.js";
+//import { homeHeader } from "../components/homeHeader.js";
 import { filterBar } from "../components/filterBar.js";
 import { stats } from "../components/stats.js";
 import dataset from "../data/dataset.js";
 import { filterData, sortData } from "../lib/dataFunctions.js";
+import { blackHeader } from "../components/blackHeader.js";
 
 const Home = (props) => {
   console.log("AQUI ES HOME ", props);
   // HOME ES LA VISTA INICIAL-DEBE CONTENER TODO LO QUE SE VA A RENDERIZAR EN EL INICIO HTML, RENDERCARD DEBEN IR AQUI
   const viewEl = document.createElement("div");
+
+  const header = document.createElement("header");
+  header.innerHTML = blackHeader();
+  viewEl.appendChild(header);
 
   const controlBar = document.createElement("div");
   controlBar.innerHTML = filterBar();
