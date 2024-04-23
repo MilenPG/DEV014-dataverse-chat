@@ -334,9 +334,9 @@ footer {
     width: 250px;
   }
 
-  .header-img {
+  /* .header-img {
     display: none;
-  }
+  } */
 
   nav {
     justify-content: flex-end;
