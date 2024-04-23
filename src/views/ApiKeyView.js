@@ -22,6 +22,8 @@ const ApiKey = () => {
   apiKeyButton.addEventListener("click", function () {
     const apiKeyInput = viewEl.querySelector("#input-api-key").value;
     setApiKey(apiKeyInput); // Al hacer click, estamos invocando esta función que guardará la API Key en el local Storage. 
+    
+    //Aquí también deberíamos agregar los if-else para crear los innerHTML con <span> de acceso válido o inválido en caso respectivo.
   });
 
   return viewEl;
